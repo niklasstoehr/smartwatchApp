@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--mainPage-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="mainPage" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="metaMe_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="home" id="pjP-CS-w4M">
+                            <connections>
+                                <action selector="buttonPressed" destination="AgC-eL-Hgc" id="1Mf-2W-2VH"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="button" destination="pjP-CS-w4M" id="Cwj-qy-VTa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="253"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="204" y="1079"/>
+        </scene>
+        <!--metaPage-->
+        <scene sceneID="G1V-M1-5e6">
+            <objects>
+                <controller identifier="metaPage" id="vbZ-gO-qqj" customClass="HifiPageController" customModule="metaMe_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" text="Linking " id="HBr-Fb-z3q">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </label>
+                        <group width="118" height="71" alignment="center" verticalAlignment="center" backgroundImage="hi-fi" contentMode="scaleAspectFit" id="SIZ-Ft-m84">
+                            <items>
+                                <imageView width="72" height="72" alignment="center" verticalAlignment="center" hidden="YES" image="hi-fi" contentMode="scaleAspectFit" animationDuration="1" id="VTi-AC-b5F"/>
+                                <label width="136" alignment="center" verticalAlignment="center" textAlignment="center" numberOfLines="7" id="poj-n0-0hb">
+                                    <fontDescription key="font" type="system" weight="ultraLight" pointSize="87"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label height="20" alignment="center" verticalAlignment="center" hidden="YES" text="Label" id="7a9-27-gCf">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </label>
+                        <group width="1" height="5" alignment="left" verticalAlignment="center" id="vct-3A-tYh">
+                            <items>
+                                <imageView width="2" height="1" alignment="left" verticalAlignment="bottom" image="loadingbarBackground2" id="nXn-0B-kZN"/>
+                            </items>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                        <imageView alignment="left" verticalAlignment="bottom" image="linking" id="912-tX-kVF"/>
+                    </items>
+                    <connections>
+                        <outlet property="loadingBarGroup" destination="vct-3A-tYh" id="xfr-O0-xct"/>
+                        <outlet property="loadingBarProgress" destination="nXn-0B-kZN" id="wV0-4E-ZBr"/>
+                        <outlet property="stageLabel" destination="HBr-Fb-z3q" id="naa-cg-hrO"/>
+                        <outlet property="stagePic" destination="912-tX-kVF" id="nyE-hk-FFm"/>
+                        <outlet property="taskGroup" destination="SIZ-Ft-m84" id="all-wa-ZLv"/>
+                        <outlet property="taskPic" destination="VTi-AC-b5F" id="7kU-Ih-QNi"/>
+                        <outlet property="valueLabel" destination="poj-n0-0hb" id="tJx-Js-lHZ"/>
+                        <outlet property="volumeLable" destination="7a9-27-gCf" id="6zZ-gB-NRf"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="544" y="211"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="metaMe_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="452" y="1079"/>
+        </scene>
+    </scenes>
+</document>

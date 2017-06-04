@@ -1,0 +1,868 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69297B8B1ED1BE0700E02F86 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69297B8A1ED1BE0700E02F86 /* music.mp3 */; };
+		694C52CA1EB1BACC003B0C43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C52C91EB1BACC003B0C43 /* AppDelegate.swift */; };
+		694C52CC1EB1BACC003B0C43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C52CB1EB1BACC003B0C43 /* ViewController.swift */; };
+		694C52CF1EB1BACC003B0C43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C52CD1EB1BACC003B0C43 /* Main.storyboard */; };
+		694C52D11EB1BACC003B0C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C52D01EB1BACC003B0C43 /* Assets.xcassets */; };
+		694C52D41EB1BACC003B0C43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C52D21EB1BACC003B0C43 /* LaunchScreen.storyboard */; };
+		694C52DF1EB1BACD003B0C43 /* metaMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C52DE1EB1BACD003B0C43 /* metaMeTests.swift */; };
+		694C52EA1EB1BACD003B0C43 /* metaMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C52E91EB1BACD003B0C43 /* metaMeUITests.swift */; };
+		694C52EF1EB1BACD003B0C43 /* metaMe WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 694C52EE1EB1BACD003B0C43 /* metaMe WatchKit App.app */; };
+		694C52F51EB1BACD003B0C43 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694C52F31EB1BACD003B0C43 /* Interface.storyboard */; };
+		694C52F71EB1BACD003B0C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C52F61EB1BACD003B0C43 /* Assets.xcassets */; };
+		694C52FE1EB1BACD003B0C43 /* metaMe WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 694C52FD1EB1BACD003B0C43 /* metaMe WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		694C53051EB1BACD003B0C43 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C53041EB1BACD003B0C43 /* InterfaceController.swift */; };
+		694C53071EB1BACD003B0C43 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C53061EB1BACD003B0C43 /* ExtensionDelegate.swift */; };
+		694C53091EB1BACD003B0C43 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694C53081EB1BACD003B0C43 /* NotificationController.swift */; };
+		694C530B1EB1BACD003B0C43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694C530A1EB1BACD003B0C43 /* Assets.xcassets */; };
+		69C69F351EC49ECC00D7C206 /* HifiPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69C69F341EC49ECC00D7C206 /* HifiPageController.swift */; };
+		EAB3D5E91ECC44BA00222F2D /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB3D5E81ECC44BA00222F2D /* WatchConnectivity.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		694C52DB1EB1BACD003B0C43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694C52BE1EB1BACC003B0C43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694C52C51EB1BACC003B0C43;
+			remoteInfo = metaMe;
+		};
+		694C52E61EB1BACD003B0C43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694C52BE1EB1BACC003B0C43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694C52C51EB1BACC003B0C43;
+			remoteInfo = metaMe;
+		};
+		694C52F01EB1BACD003B0C43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694C52BE1EB1BACC003B0C43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694C52ED1EB1BACD003B0C43;
+			remoteInfo = "metaMe WatchKit App";
+		};
+		694C52FF1EB1BACD003B0C43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694C52BE1EB1BACC003B0C43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694C52FC1EB1BACD003B0C43;
+			remoteInfo = "metaMe WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		694C53121EB1BACD003B0C43 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				694C52FE1EB1BACD003B0C43 /* metaMe WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C53161EB1BACD003B0C43 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				694C52EF1EB1BACD003B0C43 /* metaMe WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		69297B8A1ED1BE0700E02F86 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		694C52C61EB1BACC003B0C43 /* metaMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metaMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		694C52C91EB1BACC003B0C43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		694C52CB1EB1BACC003B0C43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		694C52CE1EB1BACC003B0C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		694C52D01EB1BACC003B0C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		694C52D31EB1BACC003B0C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		694C52D51EB1BACC003B0C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694C52DA1EB1BACD003B0C43 /* metaMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metaMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		694C52DE1EB1BACD003B0C43 /* metaMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metaMeTests.swift; sourceTree = "<group>"; };
+		694C52E01EB1BACD003B0C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694C52E51EB1BACD003B0C43 /* metaMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metaMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		694C52E91EB1BACD003B0C43 /* metaMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = metaMeUITests.swift; sourceTree = "<group>"; };
+		694C52EB1EB1BACD003B0C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694C52EE1EB1BACD003B0C43 /* metaMe WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "metaMe WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		694C52F41EB1BACD003B0C43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		694C52F61EB1BACD003B0C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		694C52F81EB1BACD003B0C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694C52FD1EB1BACD003B0C43 /* metaMe WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "metaMe WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		694C53031EB1BACD003B0C43 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		694C53041EB1BACD003B0C43 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		694C53061EB1BACD003B0C43 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		694C53081EB1BACD003B0C43 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		694C530A1EB1BACD003B0C43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		694C530C1EB1BACD003B0C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69C69F341EC49ECC00D7C206 /* HifiPageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HifiPageController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		EAB3D5E81ECC44BA00222F2D /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS3.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		694C52C31EB1BACC003B0C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52D71EB1BACD003B0C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52E21EB1BACD003B0C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52FA1EB1BACD003B0C43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB3D5E91ECC44BA00222F2D /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		694C52BD1EB1BACC003B0C43 = {
+			isa = PBXGroup;
+			children = (
+				694C52C81EB1BACC003B0C43 /* metaMe */,
+				694C52DD1EB1BACD003B0C43 /* metaMeTests */,
+				694C52E81EB1BACD003B0C43 /* metaMeUITests */,
+				694C52F21EB1BACD003B0C43 /* metaMe WatchKit App */,
+				694C53011EB1BACD003B0C43 /* metaMe WatchKit Extension */,
+				694C52C71EB1BACC003B0C43 /* Products */,
+				EAB3D5E71ECC44BA00222F2D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		694C52C71EB1BACC003B0C43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				694C52C61EB1BACC003B0C43 /* metaMe.app */,
+				694C52DA1EB1BACD003B0C43 /* metaMeTests.xctest */,
+				694C52E51EB1BACD003B0C43 /* metaMeUITests.xctest */,
+				694C52EE1EB1BACD003B0C43 /* metaMe WatchKit App.app */,
+				694C52FD1EB1BACD003B0C43 /* metaMe WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		694C52C81EB1BACC003B0C43 /* metaMe */ = {
+			isa = PBXGroup;
+			children = (
+				694C52C91EB1BACC003B0C43 /* AppDelegate.swift */,
+				694C52CB1EB1BACC003B0C43 /* ViewController.swift */,
+				694C52CD1EB1BACC003B0C43 /* Main.storyboard */,
+				694C52D01EB1BACC003B0C43 /* Assets.xcassets */,
+				694C52D21EB1BACC003B0C43 /* LaunchScreen.storyboard */,
+				694C52D51EB1BACC003B0C43 /* Info.plist */,
+				694C53021EB1BACD003B0C43 /* Supporting Files */,
+			);
+			path = metaMe;
+			sourceTree = "<group>";
+		};
+		694C52DD1EB1BACD003B0C43 /* metaMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				694C52DE1EB1BACD003B0C43 /* metaMeTests.swift */,
+				694C52E01EB1BACD003B0C43 /* Info.plist */,
+			);
+			path = metaMeTests;
+			sourceTree = "<group>";
+		};
+		694C52E81EB1BACD003B0C43 /* metaMeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				694C52E91EB1BACD003B0C43 /* metaMeUITests.swift */,
+				694C52EB1EB1BACD003B0C43 /* Info.plist */,
+			);
+			path = metaMeUITests;
+			sourceTree = "<group>";
+		};
+		694C52F21EB1BACD003B0C43 /* metaMe WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				694C52F31EB1BACD003B0C43 /* Interface.storyboard */,
+				694C52F61EB1BACD003B0C43 /* Assets.xcassets */,
+				694C52F81EB1BACD003B0C43 /* Info.plist */,
+			);
+			path = "metaMe WatchKit App";
+			sourceTree = "<group>";
+		};
+		694C53011EB1BACD003B0C43 /* metaMe WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				694C53041EB1BACD003B0C43 /* InterfaceController.swift */,
+				694C53061EB1BACD003B0C43 /* ExtensionDelegate.swift */,
+				694C53081EB1BACD003B0C43 /* NotificationController.swift */,
+				694C530A1EB1BACD003B0C43 /* Assets.xcassets */,
+				694C530C1EB1BACD003B0C43 /* Info.plist */,
+				69C69F341EC49ECC00D7C206 /* HifiPageController.swift */,
+			);
+			path = "metaMe WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		694C53021EB1BACD003B0C43 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69297B8A1ED1BE0700E02F86 /* music.mp3 */,
+				694C53031EB1BACD003B0C43 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			path = "metaMe WatchKit Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+		EAB3D5E71ECC44BA00222F2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EAB3D5E81ECC44BA00222F2D /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		694C52C51EB1BACC003B0C43 /* metaMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694C53171EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMe" */;
+			buildPhases = (
+				694C52C21EB1BACC003B0C43 /* Sources */,
+				694C52C31EB1BACC003B0C43 /* Frameworks */,
+				694C52C41EB1BACC003B0C43 /* Resources */,
+				694C53161EB1BACD003B0C43 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694C52F11EB1BACD003B0C43 /* PBXTargetDependency */,
+			);
+			name = metaMe;
+			productName = metaMe;
+			productReference = 694C52C61EB1BACC003B0C43 /* metaMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		694C52D91EB1BACD003B0C43 /* metaMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694C531A1EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMeTests" */;
+			buildPhases = (
+				694C52D61EB1BACD003B0C43 /* Sources */,
+				694C52D71EB1BACD003B0C43 /* Frameworks */,
+				694C52D81EB1BACD003B0C43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694C52DC1EB1BACD003B0C43 /* PBXTargetDependency */,
+			);
+			name = metaMeTests;
+			productName = metaMeTests;
+			productReference = 694C52DA1EB1BACD003B0C43 /* metaMeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		694C52E41EB1BACD003B0C43 /* metaMeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694C531D1EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMeUITests" */;
+			buildPhases = (
+				694C52E11EB1BACD003B0C43 /* Sources */,
+				694C52E21EB1BACD003B0C43 /* Frameworks */,
+				694C52E31EB1BACD003B0C43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694C52E71EB1BACD003B0C43 /* PBXTargetDependency */,
+			);
+			name = metaMeUITests;
+			productName = metaMeUITests;
+			productReference = 694C52E51EB1BACD003B0C43 /* metaMeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		694C52ED1EB1BACD003B0C43 /* metaMe WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694C53131EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMe WatchKit App" */;
+			buildPhases = (
+				694C52EC1EB1BACD003B0C43 /* Resources */,
+				694C53121EB1BACD003B0C43 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694C53001EB1BACD003B0C43 /* PBXTargetDependency */,
+			);
+			name = "metaMe WatchKit App";
+			productName = "metaMe WatchKit App";
+			productReference = 694C52EE1EB1BACD003B0C43 /* metaMe WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		694C52FC1EB1BACD003B0C43 /* metaMe WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694C530F1EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMe WatchKit Extension" */;
+			buildPhases = (
+				694C52F91EB1BACD003B0C43 /* Sources */,
+				694C52FA1EB1BACD003B0C43 /* Frameworks */,
+				694C52FB1EB1BACD003B0C43 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "metaMe WatchKit Extension";
+			productName = "metaMe WatchKit Extension";
+			productReference = 694C52FD1EB1BACD003B0C43 /* metaMe WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		694C52BE1EB1BACC003B0C43 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "최유라";
+				TargetAttributes = {
+					694C52C51EB1BACC003B0C43 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6RD694RR44;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					694C52D91EB1BACD003B0C43 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6RD694RR44;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 694C52C51EB1BACC003B0C43;
+					};
+					694C52E41EB1BACD003B0C43 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6RD694RR44;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 694C52C51EB1BACC003B0C43;
+					};
+					694C52ED1EB1BACD003B0C43 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6RD694RR44;
+						ProvisioningStyle = Automatic;
+					};
+					694C52FC1EB1BACD003B0C43 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 6RD694RR44;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 694C52C11EB1BACC003B0C43 /* Build configuration list for PBXProject "metaMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 694C52BD1EB1BACC003B0C43;
+			productRefGroup = 694C52C71EB1BACC003B0C43 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				694C52C51EB1BACC003B0C43 /* metaMe */,
+				694C52D91EB1BACD003B0C43 /* metaMeTests */,
+				694C52E41EB1BACD003B0C43 /* metaMeUITests */,
+				694C52ED1EB1BACD003B0C43 /* metaMe WatchKit App */,
+				694C52FC1EB1BACD003B0C43 /* metaMe WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		694C52C41EB1BACC003B0C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69297B8B1ED1BE0700E02F86 /* music.mp3 in Resources */,
+				694C52D41EB1BACC003B0C43 /* LaunchScreen.storyboard in Resources */,
+				694C52D11EB1BACC003B0C43 /* Assets.xcassets in Resources */,
+				694C52CF1EB1BACC003B0C43 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52D81EB1BACD003B0C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52E31EB1BACD003B0C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52EC1EB1BACD003B0C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694C52F71EB1BACD003B0C43 /* Assets.xcassets in Resources */,
+				694C52F51EB1BACD003B0C43 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52FB1EB1BACD003B0C43 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694C530B1EB1BACD003B0C43 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		694C52C21EB1BACC003B0C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694C52CC1EB1BACC003B0C43 /* ViewController.swift in Sources */,
+				694C52CA1EB1BACC003B0C43 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52D61EB1BACD003B0C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694C52DF1EB1BACD003B0C43 /* metaMeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52E11EB1BACD003B0C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694C52EA1EB1BACD003B0C43 /* metaMeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694C52F91EB1BACD003B0C43 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694C53091EB1BACD003B0C43 /* NotificationController.swift in Sources */,
+				694C53071EB1BACD003B0C43 /* ExtensionDelegate.swift in Sources */,
+				69C69F351EC49ECC00D7C206 /* HifiPageController.swift in Sources */,
+				694C53051EB1BACD003B0C43 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		694C52DC1EB1BACD003B0C43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694C52C51EB1BACC003B0C43 /* metaMe */;
+			targetProxy = 694C52DB1EB1BACD003B0C43 /* PBXContainerItemProxy */;
+		};
+		694C52E71EB1BACD003B0C43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694C52C51EB1BACC003B0C43 /* metaMe */;
+			targetProxy = 694C52E61EB1BACD003B0C43 /* PBXContainerItemProxy */;
+		};
+		694C52F11EB1BACD003B0C43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694C52ED1EB1BACD003B0C43 /* metaMe WatchKit App */;
+			targetProxy = 694C52F01EB1BACD003B0C43 /* PBXContainerItemProxy */;
+		};
+		694C53001EB1BACD003B0C43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694C52FC1EB1BACD003B0C43 /* metaMe WatchKit Extension */;
+			targetProxy = 694C52FF1EB1BACD003B0C43 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		694C52CD1EB1BACC003B0C43 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				694C52CE1EB1BACC003B0C43 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		694C52D21EB1BACC003B0C43 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				694C52D31EB1BACC003B0C43 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		694C52F31EB1BACD003B0C43 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				694C52F41EB1BACD003B0C43 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		694C530D1EB1BACD003B0C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		694C530E1EB1BACD003B0C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		694C53101EB1BACD003B0C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				INFOPLIST_FILE = "metaMe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = choiyura.metaMe.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALID_ARCHS = "armv7k i386";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		694C53111EB1BACD003B0C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				INFOPLIST_FILE = "metaMe WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = choiyura.metaMe.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALID_ARCHS = "armv7k i386";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		694C53141EB1BACD003B0C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				IBSC_MODULE = metaMe_WatchKit_Extension;
+				INFOPLIST_FILE = "metaMe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = choiyura.metaMe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALID_ARCHS = "armv7k i386";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		694C53151EB1BACD003B0C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				IBSC_MODULE = metaMe_WatchKit_Extension;
+				INFOPLIST_FILE = "metaMe WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = choiyura.metaMe.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALID_ARCHS = "armv7k i386";
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		694C53181EB1BACD003B0C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				INFOPLIST_FILE = metaMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = choiyura.metaMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Debug;
+		};
+		694C53191EB1BACD003B0C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				INFOPLIST_FILE = metaMe/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = choiyura.metaMe;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				VALID_ARCHS = "arm64 armv7 armv7s i386";
+			};
+			name = Release;
+		};
+		694C531B1EB1BACD003B0C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				INFOPLIST_FILE = metaMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-22712ab.metaMeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metaMe.app/metaMe";
+			};
+			name = Debug;
+		};
+		694C531C1EB1BACD003B0C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				INFOPLIST_FILE = metaMeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-22712ab.metaMeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/metaMe.app/metaMe";
+			};
+			name = Release;
+		};
+		694C531E1EB1BACD003B0C43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				INFOPLIST_FILE = metaMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-22712ab.metaMeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = metaMe;
+			};
+			name = Debug;
+		};
+		694C531F1EB1BACD003B0C43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6RD694RR44;
+				INFOPLIST_FILE = metaMeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-22712ab.metaMeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = metaMe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		694C52C11EB1BACC003B0C43 /* Build configuration list for PBXProject "metaMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694C530D1EB1BACD003B0C43 /* Debug */,
+				694C530E1EB1BACD003B0C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694C530F1EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMe WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694C53101EB1BACD003B0C43 /* Debug */,
+				694C53111EB1BACD003B0C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694C53131EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMe WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694C53141EB1BACD003B0C43 /* Debug */,
+				694C53151EB1BACD003B0C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694C53171EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694C53181EB1BACD003B0C43 /* Debug */,
+				694C53191EB1BACD003B0C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694C531A1EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694C531B1EB1BACD003B0C43 /* Debug */,
+				694C531C1EB1BACD003B0C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694C531D1EB1BACD003B0C43 /* Build configuration list for PBXNativeTarget "metaMeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694C531E1EB1BACD003B0C43 /* Debug */,
+				694C531F1EB1BACD003B0C43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 694C52BE1EB1BACC003B0C43 /* Project object */;
+}
